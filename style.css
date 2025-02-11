@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ /* START NAV   */
+
+
+
+ /* END NAV  */
+
+
+
+
+
+ /* START HEADER  */
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../imgs/photo-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 220px;
+  width: 100%;
+  height: 100%;
+}
+.main-section .content {
+  color: white;
+  margin-top: 300px;
+  margin-left: 190px;
+}
+.main-section .content h1 {
+  font-size: 3rem;
+  color: #007bff;
+  margin-top: 10px;
+}
+h2 .web-developer {
+  font-size: 2.5rem;
+}
+.main-section .content p {
+  font-size: 1.5rem;
+  margin-top: -10px;
+}
+.btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  
+  border-radius: 5px;
+}
+.social-icons {
+  margin-top: 35px;
+  
+}
+.social-icons a i{
+  margin-right: 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  background-color: #69a3e0;
+  padding: 12px 12px 10px 12px;
+}
+.social-icons a i:hover {
+  color: #007bff;
+}
+@media(max-width:425px) {
+  .main-section .content {
+      color: white;
+      margin-top: 300px;
+      margin-left: 75px;
+  }
+  .main-section .content h1 {
+      font-size: 2rem;
+      color: #007bff;
+      margin-top: 10px;
+  }
+}
+ /* END HEADER */
+
+
+
+
+ 
+
+ /* START SERVICES  */
+
+
+
+
+ /* END SERVICES */
+
+
+
+
+
+
+ /* START PROJECTS */
+
+
+
+
+
+.projects {
+    background-color: rgb(49, 48, 48);
+    padding: 20px 0px;
+}
+ 
+.projects .container .title {
+    display: flex;
+    justify-content: center;    
+    align-items: center;  
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+  }
+  .projects .container .title::after {
+    content: "";     
+    position: absolute;
+    width:15px;
+    height: 15px;
+    background-color: #ffffff;    
+    left: 61%;   
+    transform: translateX(-50%);   
+    
+    border-radius: 50%;
+  }
+  .projects .container .title::before {
+    content: "";     
+    position: absolute;
+    width:15px;
+    height: 15px;
+    background-color: #ffffff;    
+    left:39%;   
+    transform: translateX(-50%);   
+    
+    border-radius: 50%;
+  }
+  .projects .container .title h2 {
+    display: inline-block;
+    color: #fffefe;
+    padding: 10px 20px;     
+    border: 2px solid #fffefe;     
+    font-size: 24px;   
+    font-weight: bold;
+  }
+
+
+
+.projects .container .row {
+   margin-bottom: 20px;
+   
+}
+
+.projects .container .row .card {
+    width: 350px;
+    height: 350px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.projects .container .row .card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.projects .container .row .card:hover  {
+transform: scale(1.04);
+transition-duration: 0.3s;
+}
+.projects .container .row .col .card img {
+    width: 100%;
+}
+
+.projects .container .row .card .footer-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects .container .row .card .card-body a {
+text-decoration: none;
+font-weight: bold;
+color: aqua;
+}
+.projects .container .row .card .card-body a:hover {
+    color: rgb(3, 128, 128);
+    transition-duration: 0.3s;
+}
+
+/* START MEDIA  */
+
+
+@media(max-width:425px) {
+    .projects .container .row {
+        row-gap: 20px;
+    }
+    .title::after {
+    display: none;
+    }
+    .title::before {
+    display: none;
+  }
+}
+
+@media(max-width:768px) {
+  
+
+    .projects .container .title::after {
+        content: "";     
+        position: absolute;
+        width:15px;
+        height: 15px;
+        background-color: #ffffff;    
+        left: 64%;   
+        transform: translateX(-50%);   
+        
+        border-radius: 50%;
+      }
+      .projects .container .title::before {
+        content: "";     
+        position: absolute;
+        width:15px;
+        height: 15px;
+        background-color: #ffffff;    
+        left:36%;   
+        transform: translateX(-50%);   
+        
+        border-radius: 50%;
+      }
+  
+    
+
+
+  }
+
+/* END PROJECTS */
+
+/* START CONTACT */
+
+
+
+/* END CONTACT */
+
+
+
+
+
+
+
+
+
+
+/* START FOOTER */
+
+
+
+/* END FOOTER */
