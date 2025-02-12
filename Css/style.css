@@ -2,72 +2,70 @@
     padding: 0;
     margin: 0;
 }
-/* body {
-  opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 0.9s ease-out forwards;
-} */
-
-
+ 
 
 html {
     scroll-behavior: smooth;
 }
 
  /* START NAV   */
+ nav .container .navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  color: #007bff;
+ transition-duration: 0.3s;
+ }
+ nav .collapse ul li a {
+  font-size: 20px;
+ color: #007bff;
+ transition-duration: 0.3s;
+ }
 
- .Nav {
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    position: sticky;
-    z-index: 1000px;
-    top: 0;
+
+
+ .navbar {
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: slideDown 1s ease-out forwards;
 }
-.leftSide .logo {
-    color: rgb(16, 198, 230);
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
+
+@keyframes slideDown {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
 }
-.rightSide ul {
-    
-    list-style: none;
-    display: flex;
-    gap: 15px;
+
+   
+.nav-item {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInUp 0.8s ease-out forwards;
 }
-.rightSide ul li {
-    display: inline-block;
-    /* padding: 25px; */
-    color: rgb(16, 198, 230);
-    font-size: 20px;
-    font-size: 14px;
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
-.rightSide ul li a {
-    text-decoration: none;
-    font-size: 20px;
-    padding-right: 0 100px;
-    border-radius: 3px;
-}
-.rightSide ul li a:hover {
-        color: rgb(255, 0, 0);
-}
-a:hover {
-    background: rgb(0, 255, 247);
-    transition: .5s;
-}
-@media (max-width:952px) {
-    label .logo {
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    .rightSide ul li a {
-        font-size: 16px;
-    }
-}
+
+ 
+.nav-item:nth-child(1) { animation-delay: 0.3s; }
+.nav-item:nth-child(2) { animation-delay: 0.9s; }
+.nav-item:nth-child(3) { animation-delay: 1s; }
+
+
+
+
 
  /* END NAV  */
 
