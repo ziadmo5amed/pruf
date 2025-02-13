@@ -30,3 +30,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     observer.observe(content);
 });
+
+// contact 
+
+document.addEventListener("DOMContentLoaded", function () {
+    let boxes = document.querySelectorAll(".boxs-3 div");
+
+    function showOnScroll() {
+        let triggerBottom = window.innerHeight * 0.85;
+        
+        boxes.forEach((box) => {
+            let boxTop = box.getBoundingClientRect().top;
+            if (boxTop < triggerBottom) {
+                box.classList.add("show");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", showOnScroll);
+    showOnScroll();  
+});

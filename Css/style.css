@@ -337,7 +337,126 @@ color: aqua;
 
 /* START CONTACT */
 
+.Section4 {
+  height: 40vh;
+  background-color: white;
+}
 
+
+.title {
+  display: flex;
+  justify-content: center;    
+  align-items: center;  
+  text-align: center;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.title::after {
+  content: "";     
+  position: absolute;
+  width:15px;
+  height: 15px;
+  background-color:black;    
+  left: 60%;   
+  border-radius: 50%;
+}
+.title::before {
+  content: "";     
+  position: absolute;
+  width:15px;
+  height: 15px;
+  background-color:black;       
+  left:39%;   
+  border-radius: 50%;
+}
+.title h2 {
+  padding: 10px 20px;     
+  border: 2px solid rgb(0, 0, 0);  
+  border-radius: 4px;   
+  font-size: 24px;   
+  font-weight: bold;
+}
+ 
+
+.boxs-3 {
+  text-align: center;
+  padding-bottom: 8vh;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ line-height: 3vh;
+}
+
+h4 {
+  color: black;
+  font-size: 3vh;
+}
+ 
+.boxs-3 p {
+  color: gray;
+  font-size: 2vh;
+}
+ 
+.Section4 i {
+  color: #9fdef7;
+  font-size: 5vh;
+  padding-bottom: 2vh;
+}
+.b-two i {
+  color: #e39595;
+}
+
+.boxs-3 div {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease-in-out;
+}
+.boxs-3 div.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px) {
+  
+
+  .Section4 .title::after {
+      content: "";     
+      position: absolute;
+      width:15px;
+      height: 15px;
+      background-color:black;    
+      left: 64%;   
+      transform: translateX(-50%);   
+      
+      border-radius: 50%;
+    }
+    .Section4 .title::before {
+      content: "";     
+      position: absolute;
+      width:15px;
+      height: 15px;
+      background-color:black;    
+      left:36%;   
+      transform: translateX(-50%);   
+      
+      border-radius: 50%;
+    }
+
+  
+
+
+}
 
 /* END CONTACT */
 
@@ -353,5 +472,38 @@ color: aqua;
 /* START FOOTER */
 
 
+.footer {
+  height:13vh;
+  background-color: #6d9bad;
+ 
+  text-align: center;
+ 
+}
+.footer p {
+  font-size:25px;
+  font-weight: bold;
+  color: white;
+ 
+}
+.footer a {
+  text-decoration: none;
+  color: #ca4752;
+  list-style: none;
+}
 
+@media(max-width:768px) {
+  .footer {
+    height:17vh;
+    background-color: #6d9bad;
+    
+    text-align: center;
+   
+  }
+  .footer p {
+    font-size:20px;
+    font-weight: bold;
+    color: white;
+   
+  }
+}
 /* END FOOTER */
